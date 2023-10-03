@@ -1,0 +1,101 @@
+*                                                            /**/
+{
+    margin: 0;
+    padding: 0;                                              /*RESET*/
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;                         
+}
+
+header                                                      /*CABEÇALHO*/
+{
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;                                         /*deixa o botao ao lado do titulo*/      
+    border-bottom: 16px solid #341f97;
+    justify-content: center;                               /*CENTRALIZA TUDO*/    
+    text-transform: uppercase;                             /*PARA DEIXA AS LETRAS MAIUSCULAS*/
+    font-style: italic;                                    /*DEIXA ITALICO*/   
+}
+
+header button
+{
+    margin-left: 16px;
+}
+
+form                                                      /*FORMULARIO*/
+{
+    background-color: #cBd6e5;                         /*COR DE FUNDO DO (INSERIR NOVA IMAGEM)*/   
+    padding: 24px 0;
+    text-align: center;                                  /*PARA FICAR CENTRALIZADO*/  
+    display: none;
+}
+
+form h2                                                  /*formulario*/  
+{
+    margin-bottom: 16px;                                 /*espaço entre (inserir imagem) e os (botoes)*/ 
+}
+
+input
+{
+    padding: 8px;                                        /*almentei o botao (URL da imagem)*/
+}
+
+button
+{
+    padding: 8px;                                        /*almentei o botao (ADICIONAR, CANCELAR)*/
+    background-color: #009123;                         /*COR DO BOTAO*/    
+    border: none;                                        /*REMOVENDO AS BORDAS DOS BOTOES*/ 
+    cursor: pointer;                                     /*MOUSE VIRAR UMA MAOZINHA NOS BOTOES*/
+    font-weight: bold;                                   /*FONTE DOS BOTOES NEGRITO*/  
+    text-transform: uppercase;                           
+    color: #fff;                                       /*COR DAS LETRAS DOS BOTOES*/ 
+}
+
+#botao-cancelar                                          /*id do botao cancelar*/ 
+{
+    background-color: red;                             /*botao cancelar vermelho*/ 
+}
+
+ul
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li
+{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img
+{
+    width: 100%;
+}
+
+.overlay-imagem-link
+{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link
+{
+    opacity: 1;
+}
