@@ -1,16 +1,16 @@
-$(document).ready(function()                 //ativando (jquery)
+$(document).ready(function()                //01 ativando (jquery)
 {
-    $('header button').click(function()
+    $('header button').click(function()      //02 quando eu clicar no botao que esta no HEADER (Nova Imagem +)
     {
-        $('form').slideDown();
+        $('form').slideDown();               //03 pegue tudo que esta no <FORM> e expanda para baixo 
     })
 
-    $('#botao-cancelar').click(function()
+    $('#botao-cancelar').click(function()    //04 quando clicar no botao CANCELAR 
     {
-        $('form').slideUp();
+        $('form').slideUp();                 //05 recolha tudo que esta no FORM para cima
     })
 
-    $('form').on('submit', function(e)
+    $('form').on('submit', function(e)       //06 funçao RELOOAD
     {        
         e.preventDefault();
         const enderecoImagemNova = $('#endereco-imagem-nova').val();

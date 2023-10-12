@@ -26,7 +26,7 @@ header button
 form                                                      /*FORMULARIO*/
 {
     background-color: #cBd6e5;                         /*COR DE FUNDO DO (INSERIR NOVA IMAGEM)*/   
-    padding: 24px 0;
+    padding: 24px;
     text-align: center;                                  /*PARA FICAR CENTRALIZADO*/  
     display: none;
 }
@@ -36,14 +36,13 @@ form h2                                                  /*formulario*/
     margin-bottom: 16px;                                 /*espaço entre (inserir imagem) e os (botoes)*/ 
 }
 
-input
+input, button
 {
     padding: 8px;                                        /*almentei o botao (URL da imagem)*/
 }
 
 button
-{
-    padding: 8px;                                        /*almentei o botao (ADICIONAR, CANCELAR)*/
+{                                           
     background-color: #009123;                         /*COR DO BOTAO*/    
     border: none;                                        /*REMOVENDO AS BORDAS DOS BOTOES*/ 
     cursor: pointer;                                     /*MOUSE VIRAR UMA MAOZINHA NOS BOTOES*/
@@ -89,9 +88,9 @@ ul li img
     transition: all ease .5s;
 }
 
-.overlay-imagem-link
+.overlay-imagem-link a
 {
-    color: #fff;
+    color: #fff;                           /*para sumir a legenda em baixo da foto*/
     text-decoration: none;
 }
 
